@@ -33,7 +33,7 @@
                     <li class="active"><a href="/logout">Logout</a></li>
                     <li class="active"><a href="/edit">Edit</a></li>
                 {{else}}
-                    <li class="active"><a href="/{{.User.Id}}">Home</a></li>
+                    <li class="active"><a href="/{{.Id}}">Home</a></li>
                     <li class="active"><a href="/logout">Logout</a></li>
                 {{end}}
             </ul>
@@ -42,20 +42,16 @@
 </div>
 <div class="col-sm-offset-2 col-sm-8">
     <ul >
-        <li style="border: 2px"> <img src="../assets/images/{{.User.Id}}.jpg" alt="Аватар" height="100" width="100"></li>
+        <li style="border: 2px"> <img src="../assets/images/{{.Id}}.jpg" alt="Аватар" height="100" width="100"></li>
         <li >
             <form >
-                <p>{{.User.FirstName}}</p>
-                <p>{{.User.LastName}}</p>
-                <p>{{.User.Profession}}</p>
+                <p>{{.FirstName}}</p>
+                <p>{{.LastName}}</p>
+                <p>{{.Profession}}</p>
+                <p>{{.Desc}}</p>
             </form>
         </li>
     </ul>
-    <form action="Todo"> {{/*todo*/}}
-        <p><b>Введите ваш отзыв:</b></p>
-        <p><textarea name="comment" style="height: 50px"></textarea></p>
-        <p><input type="submit"></p>
-    </form>
 </div>
 
 

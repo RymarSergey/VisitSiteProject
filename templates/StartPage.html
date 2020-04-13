@@ -32,15 +32,24 @@
                     <li class="active"><a href="/logout">Logout</a></li>
                     <li class="active"><a href="/user/{{.Id}}">Home</a></li>
                 {{else}}
-                    <li class="active" ><a href="/login">Login</a></li>
-                    <li class="active" ><a href="/edit">Sign in</a></li>
+                    <li class="active"><a href="/login">Login</a></li>
+                    <li class="active"><a href="/edit">Sign up</a></li>
                 {{end}}
             </ul>
         </div><!--/.nav-collapse -->
     </div>
 </div>
-
-
+<div class="col-sm-offset-2 col-sm-8" >
+    <ul style="border: 2px">
+        <li style="border: 2px"> <img src="../assets/images/{{.Id}}.jpg" alt="Аватар" height="100" width="100"></li>
+        <li >
+            <form >
+                <p>{{.FirstName}}</p>
+                <p>{{.LastName}}</p>
+                <p>{{.Profession}}</p>
+        <li class="active"><a href="/logout">Logout</a></li>
+    </ul>
+</div>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="/assets/js/bootstrap.min.js"></script>
 </body>

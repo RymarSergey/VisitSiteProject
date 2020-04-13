@@ -1,7 +1,7 @@
 package model
 
 import (
-	"gopkg.in/mgo.v2/bson"
+	"github.com/globalsign/mgo/bson"
 )
 
 type UserStruct struct {
@@ -15,5 +15,3 @@ type UserStruct struct {
 	Description string        `json:"description" bson:"description"`
 	Auth        bool          `json:"auth" bson:"auth"`
 }
-
-
